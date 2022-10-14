@@ -1,0 +1,219 @@
+.megamenu {
+  font-family: Poppins, sans-serif;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.departament_group {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    font: 700 13px Poppins, sans-serif;
+    line-height: 13px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+
+    &__link {
+      text-decoration: none;
+      color: #000;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      background-image: url(https://cosmo.vtexassets.com/assets/vtex/assets-builder/cosmo.store-theme/4.9.15/svg/icons/arrow___f3f0d39….svg);
+      transform: rotate(90deg);
+      background-repeat: no-repeat;
+      margin-left: 8px;
+      background-size: 8px;
+      width: 8px;
+      height: 8px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.categories_container {
+  position: absolute;
+  width: 100%;
+  top: 99px;
+  background-color: #fff;
+  left: 0;
+  min-height: 500px;
+  z-index: 4;
+
+  &__categories {
+    padding: 0 0 0 254px;
+    max-width: 1544px;
+    display: flex;
+    width: 100%;
+     border-right: 1px solid #dbdbdb;
+
+    &__group {
+      border-right: 1px solid #dbdbdb;
+      padding-top: 20px;
+      width: 20%;
+      height: 100%;
+      position: relative;
+      margin: 0;
+    }
+  }
+
+  .categories_group__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &.active {
+      a {
+        color: #000000;
+        font-weight: 700 !important;
+        font: 13px Poppins, sans-serif;
+      }
+    }
+
+    .categories_group__item__link {
+      display: block;
+      font-size: 13px;
+      padding: 12px 0;
+      color: #757d83;
+      font-weight: 600;
+      line-height: 1.5;
+      text-transform: none;
+      text-decoration: none;
+      cursor: pointer;
+      max-width: 200px;
+      line-height: 20px;
+      font-family: Poppins, sans-serif;
+
+      &:hover {
+        color: #000000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.categories_group__item.active a {
+  color: #000000;
+  font-weight: 700 !important;
+}
+
+.categories_group__item.active {
+  &::before {
+    content: '';
+    display: block;
+    left: -16px;
+    width: 10px;
+    height: 10px;
+    background-color: #2196f3;
+    margin-right: 4px;
+    position: absolute;
+    font-family: Poppins, sans-serif;
+  }
+}
+
+.categories_group__cate {
+  list-style: none;
+  width: 100%;
+  list-style: none;
+  position: relative;
+  margin: 0;
+
+  .active {
+    background-color: #f2f0f0;
+    font-family: Poppins, sans-serif;
+
+    a {
+      font-weight: 700 !important;
+      font-family: Poppins, sans-serif;
+    }
+  }
+
+  .categories__item {
+    padding-left: 16px;
+
+    .categories__item__link {
+      color: #000000;
+      font-weight: 500;
+      display: block;
+      padding: 12px 0;
+      line-height: 1.5;
+      text-transform: none;
+      text-decoration: none;
+      font-size: 13px;
+      font-family: Poppins, sans-serif;
+    }
+  }
+}
+.mega-menu__brands-title {
+    margin: 12px 0;
+    padding-bottom: 8px;
+    color: #757d83 !important;
+    font-weight: 700 !important;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.categories_group__subcate.gray {
+  background-color: #f2f0f0;
+}
+.categories_group__subcate.white {
+  background-color: #fff;
+}
+
+.container-brands {
+    width: 100%;
+}
+.container-cate{
+    width: 60%;
+    display: flex;
+    margin: 20px 10% 0;
+    // border-right: 1px solid #dbdbdb;
+}
+
+.categories_group__subcate {
+  display: block;
+  width: 100%;
+  margin: 0;
+  display: block;
+
+  .categories_group__subcate_img {
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 16px;
+    img {
+      margin: auto;
+    }
+  }
+
+  li {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    padding: 12px 16px;
+
+    a {
+      color: #000000;
+      font-weight: 500;
+      font-size: 13px;
+      font-family: Poppins, sans-serif;
+      text-decoration: none;
+
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
