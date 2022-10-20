@@ -138,6 +138,7 @@ const Desktop = ({ items }: Departaments) => {
                               <img src={item.image} />
                             </a>{' '}
                           </li>
+                          
                         ))}
                       </ul>
                     </div>
