@@ -6,6 +6,7 @@ export const items = [
       {
         name: "Guitars, Amps, Effects & Accessories",
         slug: "/guitars---amps",
+        all_categories: "/categories/guitars-and-amps",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/boss-logo_200.jpg', slug: '/brands/boss' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/fender-logo_200x200.jpg', slug: '/brands/fender' },
@@ -24,6 +25,7 @@ export const items = [
           {
             name: "Acoustic Guitars",
             slug: "/guitars---amps/acoustic-guitars",
+            all_categories: "/categories/acoustic-guitars",
             menu: [
               {
                 name: "12 String Guitars - Left Handed",
@@ -46,6 +48,7 @@ export const items = [
           {
             name: "Classical Guitars",
             slug: "/guitars---amps/classical-guitars",
+            all_categories: "/categories/acoustic-guitars",
             menu: [
               {
                 name: "Classical Guitars - Left Handed",
@@ -60,6 +63,7 @@ export const items = [
           {
             name: "Electric Guitars",
             slug: "/guitars---amps/electric-guitars--amps",
+            all_categories: "/categories/electric-guitars",
             menu: [
               {
                 name: "Electric Guitars - Left Handed",
@@ -74,39 +78,32 @@ export const items = [
           {
             name: "Bass Guitars",
             slug: "/guitars---amps/bass-guitars-amps",
-            menu: [
-              {
-                name: "Bass Guitars - Left Handed",
-                slug: "/guitars---amps/bass-guitars-amps/bass-guitars---left-handed"
-              },
-              {
-                name: "Bass Guitars - Right Handed",
-                slug: "/guitars---amps/bass-guitars-amps/bass-guitars---right-handed"
-              }
-            ]
+            all_categories: '/categories/bass-guitars',
+            menu: [{
+              name: "Bass Amps",
+              slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
+            },
+            {
+              name: "Guitar Amps",
+              slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
+            }]
           },
           {
             name: "Guitar Amps",
             slug: "/guitars---amps/amps-for-guitar---bass/guitar-amps",
+            all_categories: '/categories/guitars-and-amps',
             menu: []
           },
           {
             name: "Bass Amps",
             slug: "/guitars---amps/amps-for-guitar---bass/bass-amps",
-            menu: [
-              {
-                name: "Bass Amps",
-                slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
-              },
-              {
-                name: "Guitar Amps",
-                slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
-              }
-            ]
+            all_categories: '/categories/guitars-and-amps',
+            menu: []
           },
           {
             name: "Effects & Pedals",
             slug: "/guitars---amps/effects---pedals",
+            all_categories: '/categories/guitar-effects-pedals',
             menu: [
               {
                 name: "Bass Guitar Specific",
@@ -209,6 +206,7 @@ export const items = [
           {
             "name": "Folk Instruments",
             slug: "/guitars---amps/folk-instruments",
+            all_categories: '/categories/folk-instruments',
             menu: [
               {
                 "name": "Autoharps & Omnichords",
@@ -235,6 +233,7 @@ export const items = [
           {
             "name": "Ukuleles",
             slug: "/guitars---amps/ukuleles",
+            all_categories: '/categories/ukuleles',
             menu: [
               {
                 "name": "Soprano",
@@ -261,6 +260,7 @@ export const items = [
           {
             "name": "Accessories",
             slug: "/guitars---amps/guitar-accessories",
+            all_categories: '/categories/guitar-amp-accessories',
             menu: [
               {
                 "name": "Adaptors",
@@ -351,9 +351,9 @@ export const items = [
         ]
       },
       {
-        //pemdoiente
         name: "Drums & Percussion",
         slug: "/drums---percussion",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/alesis-logo_200x200.jpg', slug: '/brands/alesis' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/dw-logo_200x200.jpg', slug: '/brands/dw' },
@@ -372,6 +372,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/drums---percussion/drums---percussion-accessories",
+            all_categories: "/categories/drum-percussion-accessories",
             menu: [
               {
                 name: "Adaptors",
@@ -466,6 +467,7 @@ export const items = [
           {
             name: "Concert Percussion",
             slug: "/drums---percussion/concert-percussion",
+            all_categories: "/categories/classical-guitars",
             menu: [
               {
                 name: "Bells",
@@ -504,6 +506,7 @@ export const items = [
           {
             name: "Cymbals",
             slug: "/drums---percussion/cymbals",
+            all_categories: "/categories/cymbals",
             menu: [
               {
                 name: "Band & Orchestra",
@@ -562,11 +565,13 @@ export const items = [
           {
             name: "Drum Machines",
             slug: "/drums---percussion/drum-machines",
+            all_categories: "/categories/drums-percussion",
             menu: []
           },
           {
             name: "Drums",
             slug: "/drums---percussion/drums",
+            all_categories: "/categories/acoustic-and-electronic-drums",
             menu: [
               {
                 name: "Drum Sets & Shell Packs",
@@ -593,6 +598,7 @@ export const items = [
           {
             name: "Educational/ Kids Percussion",
             slug: "/drums---percussion/educational-kids-percussion",
+            all_categories: "/categories/educational-kids-percussion",
             menu: [
               {
                 name: "Boomwhackers",
@@ -623,6 +629,7 @@ export const items = [
           {
             name: "Hand/ World Percussion",
             slug: "/drums---percussion/hand-world-percussion",
+            all_categories: "/categories/hand-world-percussion",
             menu: [
               {
                 name: "Afuche/ Cabasas",
@@ -721,11 +728,13 @@ export const items = [
           {
             name: "Marching Drums",
             slug: "/drums---percussion/marching-drums",
+            all_categories: "/categories/drums-percussion",
             menu: []
           },
           {
             name: "Orff Instruments",
             slug: "/drums---percussion/orff-instruments",
+            all_categories: "/categories/orff-instruments",
             menu: [
               {
                 name: "Glockenspiels",
@@ -758,6 +767,7 @@ export const items = [
       {
         name: "Pianos & Keyboards",
         slug: "/pianos---keyboards",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/bach-logo_200x200.jpg', slug: '/rentals' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/buffet-logo_200x200.jpg', slug: '/rentals' },
@@ -776,6 +786,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/pianos---keyboards/piano---keyboard-accessories",
+            all_categories: "",
             menu: [
               {
                 name: "Adaptors",
@@ -834,6 +845,7 @@ export const items = [
           {
             name: "Acoustic Pianos",
             slug: "/pianos---keyboards/acoustic-pianos",
+            all_categories: "",
             menu: [
               {
                 name: "Grand Pianos",
@@ -848,26 +860,31 @@ export const items = [
           {
             name: "Home Digital & Hybrid Pianos",
             slug: "/pianos---keyboards/home-digital---hybrid-pianos",
+            all_categories: "",
             menu: []
           },
           {
             name: "Home Portable Keyboards",
             slug: "/pianos---keyboards/home-portable-keyboards",
+            all_categories: "",
             menu: []
           },
           {
             name: "Keyboard Amps",
             slug: "/pianos---keyboards/keyboard-amps",
+            all_categories: "",
             menu: []
           },
           {
             name: "Keyboards & Synths",
             slug: "/pianos---keyboards/keyboards---synths",
+            all_categories: "",
             menu: []
           },
           {
             name: "MIDI Controllers",
             slug: "/pianos---keyboards/midi-controllers",
+            all_categories: "",
             menu: [
               {
                 name: "Fader Controllers",
@@ -890,6 +907,7 @@ export const items = [
           {
             name: "Modules & Samplers",
             slug: "/pianos---keyboards/modules---samplers",
+            all_categories: "",
             menu: [
               {
                 name: "Samplers",
@@ -904,6 +922,7 @@ export const items = [
           {
             name: "Stage Pianos",
             slug: "/pianos---keyboards/stage-pianos",
+            all_categories: "",
             menu: []
           }
         ]
@@ -911,6 +930,7 @@ export const items = [
       {
         name: "Band & Orchestra",
         slug: "/brass-woodwind---orchestra",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/bach-logo_200x200.jpg', slug: '/rentals' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/buffet-logo_200x200.jpg', slug: '/rentals' },
@@ -929,6 +949,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/brass-woodwind---orchestra/brass-woodwind---orchestral-accessories",
+            all_categories: "",
             menu: [
               {
                 name: "Batons",
@@ -1079,6 +1100,7 @@ export const items = [
           {
             name: "Brass Instruments",
             slug: "/brass-woodwind---orchestra/brass-instruments",
+            all_categories: "",
             menu: [
               {
                 name: "Flugelhorns",
@@ -1125,6 +1147,7 @@ export const items = [
           {
             name: "Orchestra Strings",
             slug: "/brass-woodwind---orchestra/orchestral-stringed-instrument",
+            all_categories: "",
             menu: [
               {
                 name: "Cellos",
@@ -1147,6 +1170,7 @@ export const items = [
           {
             name: "Recorders, Fifes, & Whistles",
             slug: "/brass-woodwind---orchestra/recorders-fifes---whistles",
+            all_categories: "",
             menu: [
               {
                 name: "Fifes",
@@ -1165,6 +1189,7 @@ export const items = [
           {
             name: "Woodwind Instruments",
             slug: "/brass-woodwind---orchestra/woodwind-instruments",
+            all_categories: "",
             menu: [
               {
                 name: "Flutes",
@@ -1193,6 +1218,7 @@ export const items = [
       {
         name: "Other Instruments & Accessories",
         slug: "/other-instruments---accessories",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/akg-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/at-logo_200x200.jpg', slug: '' },
@@ -1211,6 +1237,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/other-instruments---accessories/other-accessories",
+            all_categories: "",
             menu: [
               {
                 name: "Batteries",
@@ -1249,11 +1276,13 @@ export const items = [
           {
             name: "Accordions",
             slug: "/other-instruments---accessories/accordions",
+            all_categories: "",
             menu: []
           },
           {
             name: "Harmonicas",
             slug: "/other-instruments---accessories/harmonicas-melodicas---melodeons",
+            all_categories: "",
             menu: [
               {
                 name: "Harmonica Sets",
@@ -1340,26 +1369,31 @@ export const items = [
           {
             name: "Harps",
             slug: "/other-instruments---accessories/harps",
+            all_categories: "",
             menu: []
           },
           {
             name: "Headphones",
             slug: "/other-instruments---accessories/headphones",
+            all_categories: "",
             menu: []
           },
           {
             name: "Melodicas & Melodeons",
             slug: "/other-instruments---accessories/harmonicas-melodicas---melodeons/melodicas---melodeons",
+            all_categories: "",
             menu: []
           },
           {
             name: "Music Stands",
             slug: "/other-instruments---accessories/music-stands",
+            all_categories: "",
             menu: []
           },
           {
             name: "Whistles",
             slug: "/other-instruments---accessories/whistles",
+            all_categories: "",
             menu: []
           }
         ]
@@ -1367,6 +1401,7 @@ export const items = [
       {
         name: "Live Sound",
         slug: "/live-sound",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/behringer-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/digiflex-logo_200x200.jpg', slug: '' },
@@ -1385,6 +1420,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/live-sound/live-sound-accessories",
+            all_categories: "",
             menu: [
               {
                 name: "Acoustic Treatment",
@@ -1479,11 +1515,13 @@ export const items = [
           {
             name: "Direct Boxes",
             slug: "/live-sound/direct-boxes",
+            all_categories: "",
             menu: []
           },
           {
             name: "Microphones",
             slug: "/live-sound/microphones",
+            all_categories: "",
             menu: [
               {
                 name: "Wired Microphones",
@@ -1498,6 +1536,7 @@ export const items = [
           {
             name: "Mixers",
             slug: "/live-sound/mixers",
+            all_categories: "",
             menu: [
               {
                 name: "Powered Mixers",
@@ -1508,21 +1547,25 @@ export const items = [
           {
             name: "Portable PA Systems",
             slug: "/live-sound/portable-pa-systems",
+            all_categories: "",
             menu: []
           },
           {
             name: "Power Amps",
             slug: "/live-sound/power-amps",
+            all_categories: "",
             menu: []
           },
           {
             name: "Preamps",
             slug: "/live-sound/audio-preamps",
+            all_categories: "",
             menu: []
           },
           {
             name: "Speakers",
             slug: "/live-sound/speakers",
+            all_categories: "",
             menu: []
           }
         ]
@@ -1530,6 +1573,7 @@ export const items = [
       {
         name: "Recording",
         slug: "/recording",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/behringer-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/focusrite-logo_200x200.jpg', slug: '' },
@@ -1549,6 +1593,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/recording/recording-accessories",
+            all_categories: "",
             menu: [
               {
                 name: "Adaptors",
@@ -1583,21 +1628,25 @@ export const items = [
           {
             name: "Field Recorders",
             slug: "/recording/field-recorders",
+            all_categories: "",
             menu: []
           },
           {
             name: "Interfaces",
             slug: "/recording/recording-interfaces",
+            all_categories: "",
             menu: []
           },
           {
             name: "Monitors",
             slug: "/recording/recording-monitors",
+            all_categories: "",
             menu: []
           },
           {
             name: "Software",
             slug: "/recording/software",
+            all_categories: "",
             menu: [
               {
                 name: "Notation & Scoring",
@@ -1624,6 +1673,7 @@ export const items = [
           {
             name: "Studio Recording",
             slug: "/recording/studio-recording",
+            all_categories: "",
             menu: [
               {
                 name: "Computer Cards & Upgrades",
@@ -1646,6 +1696,7 @@ export const items = [
           {
             name: "Video Recorders",
             slug: "/recording/video-recorders",
+            all_categories: "",
             menu: []
           }
         ]
@@ -1653,6 +1704,7 @@ export const items = [
       {
         name: "Apparel, Homeware, & Gifts",
         slug: "/apparel-homeware---gifts",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/charvel-logo_200x61.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/cosmo-logo_200x200.jpg', slug: '' },
@@ -1670,6 +1722,7 @@ export const items = [
           {
             name: "Clothing & Apparel",
             slug: "/apparel-homeware---gifts/clothing---apparel",
+            all_categories: "",
             menu: [
               {
                 name: "Babies, Toddlers, & Infants",
@@ -1720,21 +1773,25 @@ export const items = [
           {
             name: "Gift Cards",
             slug: "/apparel-homeware---gifts/gift-cards",
+            all_categories: "",
             menu: []
           },
           {
             name: "Hand Bags & Wallets",
             slug: "/apparel-homeware---gifts/hand-bags-wallets-cases---holders",
+            all_categories: "",
             menu: []
           },
           {
             name: "Holiday Ornaments & Decorations",
             slug: "/apparel-homeware---gifts/holiday-ornaments---decorations",
+            all_categories: "",
             menu: []
           },
           {
             name: "Household & Collectibles",
             slug: "/apparel-homeware---gifts/household---collectibles",
+            all_categories: "",
             menu: [
               {
                 name: "Bath & Body Products",
@@ -1797,6 +1854,7 @@ export const items = [
           {
             name: "Jewelry",
             slug: "/apparel-homeware---gifts/jewelry",
+            all_categories: "",
             menu: [
               {
                 name: "Bracelets & Watches",
@@ -1831,6 +1889,7 @@ export const items = [
           {
             name: "Stationery, Office Supplies, & Party Supplies",
             slug: "/apparel-homeware---gifts/stationary-office---party-supplies",
+            all_categories: "",
             menu: [
               {
                 name: "Calendars",
@@ -1863,6 +1922,7 @@ export const items = [
       {
         name: "Print Music, Media, & Vinyl",
         slug: "/print-music-media---vinyl",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/alfred-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/fgh-logo_200x200.jpg', slug: '' },
@@ -1875,6 +1935,7 @@ export const items = [
           {
             name: "Print Music",
             slug: "/print-music-media---vinyl/print-music",
+            all_categories: "",
             menu: [
               {
                 name: "Band & Orchestra",
@@ -1925,31 +1986,37 @@ export const items = [
           {
             name: "Vinyl",
             slug: "/print-music-media---vinyl/vinyl",
+            all_categories: "",
             menu: []
           },
           {
             name: "Manuscript Paper & Books",
             slug: "/print-music-media---vinyl/manuscript-paper---books",
+            all_categories: "",
             menu: []
           },
           {
             name: "Education Software",
             slug: "/print-music-media---vinyl/music-education-software",
+            all_categories: "",
             menu: []
           },
           {
             name: "Flashcards & Teaching Aids",
             slug: "/print-music-media---vinyl/flashcards---teaching-aids",
+            all_categories: "",
             menu: []
           },
           {
             name: "CD",
             slug: "/print-music-media---vinyl/performance-cd",
+            all_categories: "",
             menu: []
           },
           {
             name: "DVD &  CD-ROM",
             slug: "/print-music-media---vinyl/dvd-cd-video---software",
+            all_categories: "",
             menu: [
               {
                 name: "Classroom",
@@ -1966,6 +2033,7 @@ export const items = [
       {
         name: "DJ & Lighting",
         slug: "/dj---lighting",
+        all_categories: "/categories/apparel-homeware-gifts",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/adj-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/akai-pro-logo-200x200.jpg', slug: '' },

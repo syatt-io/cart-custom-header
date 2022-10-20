@@ -91,6 +91,7 @@
       cursor: pointer;
       max-width: 200px;
       font-family: Poppins, sans-serif;
+      line-height: 18px !important;
 
       &:hover {
         color: #000000;
@@ -190,6 +191,7 @@
     display: inline-block;
     vertical-align: top;
     padding: 12px 16px;
+    filter: grayscale(1);
     img {
       margin: auto;
     }

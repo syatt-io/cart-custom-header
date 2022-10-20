@@ -138,6 +138,7 @@ const Desktop = ({ items }: Departaments) => {
                               <img src={item.image} />
                             </a>{' '}
                           </li>
+                          
                         ))}
                       </ul>
                     </div>
@@ -153,7 +154,7 @@ const Desktop = ({ items }: Departaments) => {
                 </div>
                 <div
                   style={{
-                    borderLeft: '1px solid #dbdbdb',
+                    borderLeft: overCategory.category.length > 0 ? '1px solid #dbdbdb' : 'none',
                     width: '20%',
                     display: 'flex',
                     backgroundColor: '#fff',

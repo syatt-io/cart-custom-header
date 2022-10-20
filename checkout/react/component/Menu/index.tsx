@@ -16,9 +16,9 @@ const Menu = () => {
       setIsMobile(false)
     }
     return () => {
-      console.log('isMobile:', width)
+      console.log('isMobile')
     }
-  }, [isMobile])
+  }, [isMobile, width])
 
   return (
       !isMobile ? <Desktop items={items} /> : <Mobile items={items}/>
