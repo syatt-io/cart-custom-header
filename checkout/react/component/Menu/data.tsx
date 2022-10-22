@@ -1,6 +1,6 @@
 export const items = [
   {
-    name: 'STORE',
+    name: 'Store',
     slug: '/',
     departaments: [
       {
@@ -1580,7 +1580,6 @@ export const items = [
           { image: 'https://cosmo.vteximg.com.br/arquivos/jbl-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/krk-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/mackie-logo_200x200.jpg', slug: '' },
-          { image: 'https://cosmo.vteximg.com.br/arquivos/mackie-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/m-audio-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/ni_logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/presonus-logo_200x200.jpg', slug: '' },
@@ -2160,7 +2159,7 @@ export const items = [
     ],
   },
   {
-    name: 'RENT',
+    name: 'Rent',
     slug: '/pages/repair',
     departaments: [
       { name: 'Band & Orchestra Rentals', slug: '/rentals', brands: [], menu: [] },
@@ -2170,7 +2169,7 @@ export const items = [
     ],
   },
   {
-    name: 'REPAIR',
+    name: 'Repair',
     slug: '/pages/repair',
     departaments: [
       { name: 'Cosmo Music Repair Shop', slug: '/pages/repair', brands: [], menu: [] },
@@ -2182,7 +2181,7 @@ export const items = [
     ],
   },
   {
-    name: 'LEARN',
+    name: 'Learn',
     slug: '/pages/school-of-music',
     departaments: [
       { name: 'School of Music', slug: '/pages/school-of-music', brands: [], menu: [] },
@@ -2198,7 +2197,7 @@ export const items = [
     ],
   },
   {
-    name: 'PRO',
+    name: 'Pro',
     slug: '',
     departaments: [
       { name: 'Cosmo Pro', slug: '/pages/cosmo-pro', brands: [], menu: [] },
@@ -2211,7 +2210,7 @@ export const items = [
     ],
   },
   {
-    name: 'NEWS',
+    name: 'News',
     slug: '/',
     departaments: [
       { name: 'Reviews News', slug: '/blogs/reviews-news', brands: [], menu: [] },

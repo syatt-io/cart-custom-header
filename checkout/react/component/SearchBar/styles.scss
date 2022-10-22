@@ -4,6 +4,7 @@
     background-color: #fff;
     border: none;
     position: relative;
+    padding: 16px;
 
     .header__utilities-item-arrow{
       position: absolute;
@@ -26,8 +27,12 @@
     &.svg-icon--header-search {
       background-color: #fff;
       fill: #2196f3;
-      width: 27.3px;
-      height: 28.6px;
+      width: 20px;
+      height: 20px;
+      @media (max-width: 760px) {
+        width: 27.3px;
+        height: 28.6px;
+      }
     }
   }
   .header-search {

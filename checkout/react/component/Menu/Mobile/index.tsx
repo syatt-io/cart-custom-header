@@ -9,22 +9,22 @@ const Mobile = ({ items }: Departaments) => {
     const [categories, setCategories] = useState<any>([])
     const [isMobile, setIsMobile] = useState<boolean>()
     const [name, setName] = useState<any>([])
-    const [localS, setLocalS] = useState<any>()
     const [fadeProp, setFadeProp] = useState({ fade: "fade-in" })
     const [menu, setMenu] = useState(false)
+    const [preCategories, setPreCategories] = useState([])
 
-    const getCategories = (categories, name) => {
+    const getCategories = (categories1, name1) => {
         setTimeout(() => {
-            if (categories.length > 0) {
-                setCategories(categories)
-                setName(name)
+            if (categories1.length > 0) {
+                setCategories(categories1)
+                setName(name1)
             }
             else {
                 setFadeProp({ fade: 'fade-in' })
             }
 
         }, 1000);
-        if (categories !== undefined) {
+        if (categories1 !== undefined) {
             setFadeProp({
                 fade: 'fade-out'
             })
@@ -37,19 +37,15 @@ const Mobile = ({ items }: Departaments) => {
     }
 
     const prevCategories = () => {
-        const res = items.filter((item) => categories.includes(item.name));
-        setCategories(res)
+        setCategories(preCategories)
     }
 
     useEffect(() => {
-        if (localStorage.getItem('prev')) {
-            setLocalS(localStorage.getItem('prev'))
-        }
-        return () => {
-            console.log("salio!")
-        }
-    }, [categories, localS, localStorage])
-
+        const fff = categories.filter((lol) => lol.name === name )
+        console.log("fff",fff)
+    
+    }, [categories, name])
+    
     useEffect(() => {
         if (width < 690) {
           setIsMobile(true)

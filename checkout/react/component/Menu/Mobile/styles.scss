@@ -69,6 +69,9 @@
     padding: 0;
 
     .mobile-nav__action {
+      svg {
+        margin-right: 8px; 
+      }
       a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -92,6 +95,15 @@
         border: 2px solid #000000;
       }
     }
+  }
+}
+.menu-mobile-hanburguer {
+  padding: 0;
+  width: 54px;
+  height: 56px;
+  svg {
+    width: 33.8px;
+    height: 24.7px;
   }
 }
 
@@ -155,7 +167,7 @@
     font-size: 17px !important;
     font-weight: 700 !important;
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 0 !important;
     color: #000 !important;
   }
   &__button {
@@ -169,6 +181,8 @@
       font-weight: 700;
       text-transform: uppercase;
       vertical-align: middle;
+      margin-left: 2px;
+      margin-bottom: 0;
     }
   }
 }
