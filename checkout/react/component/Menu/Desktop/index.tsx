@@ -2,17 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { Categories, Departaments } from '../../../interfaces'
 import './styles.scss'
 
-
 const Desktop = ({ items }: Departaments) => {
-  const [overDepartament, setOverDepartament] = useState<any>([])
+  const [overDepartament, setOverDepartament] = useState<[]>([])
   const [overCategory, setOverCategory] = useState({ category: [], brands: [] })
+  const [allCategories, setAllCategories] = useState('')
+  const [allCategories2, setAllCategories2] = useState('')
   const [overSubCategory, setOverSubCategory] = useState({
     category: [],
     name: '',
   })
 
-  const handlerOverCategory = (category, brands) => {
+  const handlerOverCategory = (category, brands, all_categories) => {
     setOverSubCategory({ category: [], name: '' })
+    setAllCategories(all_categories)
     setOverCategory((prev: any) => {
       return {
         ...prev,
@@ -22,8 +24,9 @@ const Desktop = ({ items }: Departaments) => {
     })
   }
 
-  const handlerOverSubCategory = (category, name) => {
-    setOverSubCategory((prev: any) => {
+  const handlerOverSubCategory = (category, name, all_categories) => {
+    setAllCategories2(all_categories)
+    setOverSubCategory((prev) => {
       return {
         ...prev,
         category,
@@ -33,9 +36,9 @@ const Desktop = ({ items }: Departaments) => {
   }
 
   const handlesOnmouseout = () => {
-    //setOverDepartament([])
-    //setOverCategory({ category: [], brands: [] })
-    //setOverSubCategory({ category: [], name: '' })
+    setOverDepartament([])
+    setOverCategory({ category: [], brands: [] })
+    setOverSubCategory({ category: [], name: '' })
   }
 
   const handlerItem = (departament) => {
@@ -49,7 +52,7 @@ const Desktop = ({ items }: Departaments) => {
     })
   }
 
-  useEffect(() => {console.log(overDepartament, overCategory) }, [overDepartament, overCategory, overSubCategory])
+  useEffect(() => {}, [allCategories, allCategories2, overDepartament, overCategory, overSubCategory])
 
   return (
     <>
@@ -57,8 +60,8 @@ const Desktop = ({ items }: Departaments) => {
         <ul className="departament_group">
           {items?.map((item) => (
             <li
-              onMouseOver={() => handlerItem(item?.departaments)}
-              className="departament_group__item"
+              onMouseOver={() => handlerItem(item?.menu)}
+              className={`departament_group__item ${overDepartament === item?.menu ? 'departament_group__item--active' : ''}`}
             >
               <a className="departament_group__item__link" href={item.slug}>
                 {item.name}
@@ -71,12 +74,15 @@ const Desktop = ({ items }: Departaments) => {
           <div className="header__contact-email">support@cosmo.ca</div>
         </div>
       </div>
-      { overDepartament?.length > 0 ? (
+      {overDepartament?.length > 0 ? (
         <div className="megamenu" onMouseLeave={handlesOnmouseout}>
           {overDepartament?.length > 0 ? (
             <div className="categories_container">
               <div className="categories_container__categories">
-                <ul className={`categories_container__categories__group ${overCategory?.category?.length > 0 ? 'border-left' : null}`}>
+                <ul
+                  className={`categories_container__categories__group ${overCategory?.category?.length > 0 ? 'border-left' : null
+                    }`}
+                >
                   {overDepartament.map((departament: any) => (
                     <li
                       className={`categories_group__item ${departament.menu === overCategory.category
@@ -86,7 +92,8 @@ const Desktop = ({ items }: Departaments) => {
                       onMouseOver={() =>
                         handlerOverCategory(
                           departament.menu,
-                          departament.brands
+                          departament.brands,
+                          departament.all_categories
                         )
                       }
                     >
@@ -105,12 +112,15 @@ const Desktop = ({ items }: Departaments) => {
                     {overCategory !== undefined ? (
                       overCategory?.category?.map((category: Categories) => (
                         <li
-                          className={`categories__item ${category.name === overSubCategory.name
-                              ? 'active'
-                              : ''
-                            }`}
+                          className={`categories__item 
+                           ${category.name === overSubCategory.name && 'active'}
+                           ${category.name === overSubCategory.name &&
+                            category.menu?.length == 0 &&
+                            'brand-active'
+                            }
+                            `}
                           onMouseOver={() =>
-                            handlerOverSubCategory(category.menu, category.name)
+                            handlerOverSubCategory(category.menu, category.name, category.all_categories)
                           }
                         >
                           <a
@@ -122,11 +132,13 @@ const Desktop = ({ items }: Departaments) => {
                         </li>
                       ))
                     ) : (
-                      <div/>
+                      <div />
                     )}
-                    {overCategory?.category.length > 0 
-                      && 
-                    <li className='categories_group__subcate_all-brands'><a href=''>SHOP ALL</a></li> }
+                    {overCategory?.category.length > 0 && (
+                      <li className="categories_group__subcate_all-brands">
+                        <a href={allCategories}>SHOP ALL</a>
+                      </li>
+                    )}
                   </ul>
 
                   {overSubCategory?.category?.length === 0 ? (
@@ -134,7 +146,7 @@ const Desktop = ({ items }: Departaments) => {
                       {overCategory?.category?.length > 0 && (
                         <>
                           <h4 className="mega-menu__brands-title">
-                            Top Brands
+                            TOP BRANDS
                           </h4>
                         </>
                       )}
@@ -146,30 +158,35 @@ const Desktop = ({ items }: Departaments) => {
                               <img src={item.image} />
                             </a>{' '}
                           </li>
-
                         ))}
-                        {overCategory?.brands.length > 0 
-                        ? 
-                        <li className='categories_group__subcate_all-brands'><a href=''>Shop All Brands</a></li>
-                      : null}
-                        
+                        {overCategory?.brands.length > 0 ? (
+                          <li className="categories_group__subcate_all-brands">
+                            <a href={allCategories}>Shop All Brands</a>
+                          </li>
+                        ) : null}
                       </ul>
                     </div>
                   ) : (
                     <ul className="categories_group__subcate gray">
-                      {overSubCategory?.category?.slice(0, 18)?.map((subcategory: Categories) => (
-                        <li className="categories_group__subcate_item">
-                          <a href={subcategory.slug}>{subcategory.name}</a>
-                        </li>
-                       
-                      ))}
-                     <li className='categories_group__subcate_all-brands absolute'><a href=''>Shop More</a></li> 
+                      {overSubCategory?.category
+                        ?.slice(0, 18)
+                        ?.map((subcategory: Categories) => (
+                          <li className="categories_group__subcate_item">
+                            <a href={subcategory.slug}>{subcategory.name}</a>
+                          </li>
+                        ))}
+                      <li className="categories_group__subcate_all-brands absolute">
+                        <a href={allCategories2}>Shop More</a>
+                      </li>
                     </ul>
                   )}
                 </div>
                 <div
                   style={{
-                    borderLeft: overCategory.category.length > 0 ? '1px solid #dbdbdb' : 'none',
+                    borderLeft:
+                      overCategory.category.length > 0
+                        ? '1px solid #dbdbdb'
+                        : 'none',
                     width: '20%',
                     display: 'flex',
                     backgroundColor: '#fff',

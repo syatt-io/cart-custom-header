@@ -43,6 +43,7 @@
 
   &__body-mobile {
     background-color: #fff;
+    border-bottom: 1px solid #dbdbdb;
   }
 
   .mobile-nav__phone-email {
@@ -187,14 +188,6 @@
   }
 }
 
-.fade-in {
-  transition: opacity 1s ease;
-}
-
-.fade-out {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
 
 .container-menu-mobile {
   display: flex;

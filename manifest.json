@@ -11,6 +11,9 @@
   "scripts": {
     "prereleasy": "bash lint.sh"
   },
+  "peerDependencies": {
+    "vtex.mega-menu": "2.x"
+  },
   "credentialType": "absolute",
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

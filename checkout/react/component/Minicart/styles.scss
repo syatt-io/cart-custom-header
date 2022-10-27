@@ -1,7 +1,9 @@
 .cart_link {
     position: relative;
     padding: 16px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 760px) {
         padding: 0;
         width: 54px;

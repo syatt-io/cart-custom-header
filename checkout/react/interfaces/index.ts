@@ -2,7 +2,7 @@ export interface Departaments {
     items: {
       name: string
       slug: string
-      departaments: {
+      menu: {
         name: string
         slug: string
         brands: {
@@ -12,6 +12,7 @@ export interface Departaments {
         menu: {
           name: string
           slug: string
+          all_categories: string
           menu: {
             name: string
             slug: string
@@ -22,12 +23,13 @@ export interface Departaments {
   }
 
   export interface Categories {
-    name: string
-    slug: string
-    menu: []
-    image: string
-    category: any[];
-    brands: any[];
+    name?: string
+    slug?: string
+    all_categories: string
+    menu?: []
+    image?: string
+    category?: any[];
+    brands?: any[];
   }
 
   export interface OrderForm {

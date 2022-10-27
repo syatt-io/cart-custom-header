@@ -72,6 +72,7 @@ const SearchBar = () => {
               type="text"
               name="search-bar"
               value={search}
+              autoComplete="off"
             />
           </form>
         </section>

@@ -2,14 +2,22 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'vtex-tachyons'
 import Accounts from './component/Accounts';
-import InsertTemplateDom from './component/InsertTemplateDom';
+import AddLoginPrompt from './component/AddLoginPrompt';
+import CouponField from './component/CouponField';
+import CreateTaxRow from './component/CreateTaxRow';
+import MakeAccordion from './component/MakeAccordion';
 import Menu from './component/Menu';
 import Minicart from './component/Minicart';
+import OrderSummaryTitle from './component/OrderSummaryTitle';
 import SearchBar from './component/SearchBar';
-
+import Steps from './component/Steps';
+import TitleCheckout from './component/TitleCheckout';
+import UnitPriceHeading from './component/UnitPriceHeading';
 import './styles.scss'
+let oldHref = document.location.href;
 
 const App = () => {
+   
     ReactDOM.render(<Menu />, document.getElementById('departaments'));
     ReactDOM.render(<SearchBar />, document.getElementById('search-bar'));
     ReactDOM.render(<Accounts />, document.getElementById('login'));
@@ -18,5 +26,36 @@ const App = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
     App()
-   // InsertTemplateDom()
+    TitleCheckout()
+    UnitPriceHeading()
+    OrderSummaryTitle()
+    CouponField()
+    CreateTaxRow()
+    MakeAccordion()
+    AddLoginPrompt()
+    Steps()
 })
+
+let bodyList = document.querySelector<HTMLElement | any>("body")
+    let observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        if (oldHref != document.location.href) {
+          oldHref = document.location.href;
+          TitleCheckout()
+          UnitPriceHeading()
+          OrderSummaryTitle()
+          CouponField()
+          CreateTaxRow()
+          MakeAccordion()
+          AddLoginPrompt()
+          Steps()
+        }
+      });
+    });
+
+    var config = {
+      childList: true,
+      subtree: true
+    };
+
+    observer.observe(bodyList, config);
