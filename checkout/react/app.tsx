@@ -5,7 +5,7 @@ import Accounts from './component/Accounts';
 import AddLoginPrompt from './component/AddLoginPrompt';
 import CouponField from './component/CouponField';
 import CreateTaxRow from './component/CreateTaxRow';
-import MakeAccordion from './component/MakeAccordion';
+import Accordion from './component/Accordion';
 import Menu from './component/Menu';
 import Minicart from './component/Minicart';
 import OrderSummaryTitle from './component/OrderSummaryTitle';
@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     OrderSummaryTitle()
     CouponField()
     CreateTaxRow()
-    MakeAccordion()
+    Accordion()
     AddLoginPrompt()
     Steps()
 })
@@ -46,7 +46,7 @@ let bodyList = document.querySelector<HTMLElement | any>("body")
           OrderSummaryTitle()
           CouponField()
           CreateTaxRow()
-          MakeAccordion()
+          Accordion()
           AddLoginPrompt()
           Steps()
         }

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import useOutsideClick from '../../utils/useOutsideClick'
+import useOutsideClick from '../../hooks/useOutsideClick'
 import './styles.scss'
 
 const SearchBar = () => {

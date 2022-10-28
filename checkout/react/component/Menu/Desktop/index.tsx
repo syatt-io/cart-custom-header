@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Categories, Departaments } from '../../../interfaces'
 import './styles.scss'
 
+
 const Desktop = ({ items }: Departaments) => {
   const [overDepartament, setOverDepartament] = useState<[]>([])
   const [overCategory, setOverCategory] = useState({ category: [], brands: [] })
@@ -56,7 +57,7 @@ const Desktop = ({ items }: Departaments) => {
 
   return (
     <>
-      <div className="departaments-sections">
+      <div className="departments-sections">
         <ul className="departament_group">
           {items?.map((item) => (
             <li

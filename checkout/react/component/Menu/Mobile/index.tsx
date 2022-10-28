@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Departaments } from '../../../interfaces'
-import UseMenuMobile from '../../../utils/useMenuMobile'
-import useWindowDimensions from '../../../utils/useWindowDimensions'
+import UseMenuMobile from '../../../hooks/useMenuMobile'
+import useWindowDimensions from '../../../hooks/useWindowDimensions'
 import SearchBar from '../../SearchBar'
 import './styles.scss'
 

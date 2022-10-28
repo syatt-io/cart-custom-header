@@ -1,5 +1,5 @@
 
-const MakeAccordion = () => {
+const Accordion = () => {
     //@ts-ignore
     if (window.location.hash !== '#/profile' || window.location.hash !== '#/email') {
         const accordionBox = document.createElement('div')
@@ -99,4 +99,4 @@ const MakeAccordion = () => {
       }
 }
 
-export default MakeAccordion
+export default Accordion
