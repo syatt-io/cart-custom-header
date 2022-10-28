@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import useWindowDimensions from '../../utils/useWindowDimensions'
+
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 import { items } from './data'
 import Desktop from './Desktop'
 import Mobile from './Mobile'

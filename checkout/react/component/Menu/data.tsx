@@ -1,8 +1,8 @@
 export const items = [
   {
-    name: 'STORE',
+    name: 'Store',
     slug: '/',
-    departaments: [
+    menu: [
       {
         name: "Guitars, Amps, Effects & Accessories",
         slug: "/guitars---amps",
@@ -23,337 +23,337 @@ export const items = [
         ],
         menu: [
           {
-            name: "Acoustic Guitars",
-            slug: "/guitars---amps/acoustic-guitars",
-            all_categories: "/categories/acoustic-guitars",
-            menu: [
-              {
-                name: "12 String Guitars - Left Handed",
-                slug: "/guitars---amps/acoustic-guitars/12-string-guitars---left-handed"
-              },
-              {
-                name: "12 String Guitars - Right Handed",
-                slug: "/guitars---amps/acoustic-guitars/12-string-guitars---right-handed"
-              },
-              {
-                name: "Acoustic Guitars - Left Handed",
-                slug: "/guitars---amps/acoustic-guitars/acoustic-guitars---left-handed"
-              },
-              {
-                name: "Acoustic Guitars - Right Handed",
-                slug: "/guitars---amps/acoustic-guitars/acoustic-guitars---right-handed"
-              }
-            ]
+              name: "Acoustic Guitars",
+              slug: "/guitars---amps/acoustic-guitars",
+              all_categories: '/categories/acoustic-guitars',
+              menu: [
+                  {
+                      name: "12 String Guitars - Left Handed",
+                      slug: "/guitars---amps/acoustic-guitars/12-string-guitars---left-handed"
+                  },
+                  {
+                      name: "12 String Guitars - Right Handed",
+                      slug: "/guitars---amps/acoustic-guitars/12-string-guitars---right-handed"
+                  },
+                  {
+                      name: "Acoustic Guitars - Left Handed",
+                      slug: "/guitars---amps/acoustic-guitars/acoustic-guitars---left-handed"
+                  },
+                  {
+                      name: "Acoustic Guitars - Right Handed",
+                      slug: "/guitars---amps/acoustic-guitars/acoustic-guitars---right-handed"
+                  }
+              ]
           },
           {
-            name: "Classical Guitars",
-            slug: "/guitars---amps/classical-guitars",
-            all_categories: "/categories/acoustic-guitars",
-            menu: [
-              {
-                name: "Classical Guitars - Left Handed",
-                slug: "/guitars---amps/classical-guitars/classical-guitars---left-handed"
-              },
-              {
-                name: "Classical Guitars - Right Handed",
-                slug: "/guitars---amps/classical-guitars/classical-guitars---right-handed"
-              }
-            ]
+              name: "Classical Guitars",
+              slug: "/guitars---amps/classical-guitars",
+              all_categories: '/categories/classical-guitars',
+              menu: [
+                  {
+                      name: "Classical Guitars - Left Handed",
+                      slug: "/guitars---amps/classical-guitars/classical-guitars---left-handed"
+                  },
+                  {
+                      name: "Classical Guitars - Right Handed",
+                      slug: "/guitars---amps/classical-guitars/classical-guitars---right-handed"
+                  }
+              ]
           },
           {
-            name: "Electric Guitars",
-            slug: "/guitars---amps/electric-guitars--amps",
-            all_categories: "/categories/electric-guitars",
-            menu: [
-              {
-                name: "Electric Guitars - Left Handed",
-                slug: "/guitars---amps/electric-guitars--amps/electric-guitars---left-handed"
-              },
-              {
-                name: "Electric Guitars - Right Handed",
-                slug: "/guitars---amps/electric-guitars--amps/electric-guitars---right-handed"
-              }
-            ]
+              name: "Electric Guitars",
+              slug: "/guitars---amps/electric-guitars--amps",
+              all_categories: '/categories/classical-guitars',
+              menu: [
+                  {
+                      name: "Electric Guitars - Left Handed",
+                      slug: "/guitars---amps/electric-guitars--amps/electric-guitars---left-handed"
+                  },
+                  {
+                      name: "Electric Guitars - Right Handed",
+                      slug: "/guitars---amps/electric-guitars--amps/electric-guitars---right-handed"
+                  }
+              ]
           },
           {
-            name: "Bass Guitars",
-            slug: "/guitars---amps/bass-guitars-amps",
-            all_categories: '/categories/bass-guitars',
-            menu: [{
-              name: "Bass Amps",
-              slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
-            },
-            {
+              name: "Bass Guitars",
+              slug: "/guitars---amps/bass-guitars-amps",
+              all_categories: '/categories/bass-guitars',
+              menu: [{
+                  name: "Bass Amps",
+                  slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
+              },
+              {
+                  name: "Guitar Amps",
+                  slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
+              }]
+          },
+          {
               name: "Guitar Amps",
-              slug: "/guitars---amps/amps-for-guitar---bass/bass-amps/"
-            }]
+              slug: "/guitars---amps/amps-for-guitar---bass/guitar-amps",
+              all_categories: '/categories/guitars-amps',
+              menu: []
           },
           {
-            name: "Guitar Amps",
-            slug: "/guitars---amps/amps-for-guitar---bass/guitar-amps",
-            all_categories: '/categories/guitars-and-amps',
-            menu: []
+              name: "Bass Amps",
+              slug: "/guitars---amps/amps-for-guitar---bass/bass-amps",
+              all_categories: '/categories/bass-amps',
+              menu: []
           },
           {
-            name: "Bass Amps",
-            slug: "/guitars---amps/amps-for-guitar---bass/bass-amps",
-            all_categories: '/categories/guitars-and-amps',
-            menu: []
+              name: "Effects & Pedals",
+              slug: "/guitars---amps/effects---pedals",
+              all_categories: '/categories/guitar-effects-pedals',
+              menu: [
+                  {
+                      name: "Bass Guitar Specific",
+                      slug: "/guitars---amps/effects---pedals/bass-guitar-specific-effects-pedals"
+                  },
+                  {
+                      name: "Boost",
+                      slug: "/guitars---amps/effects---pedals/boost-effects-pedals"
+                  },
+                  {
+                      name: "Chorus",
+                      slug: "/guitars---amps/effects---pedals/chorus-effects-pedals"
+                  },
+                  {
+                      name: "Compression",
+                      slug: "/guitars---amps/effects---pedals/compression"
+                  },
+                  {
+                      name: "Delay",
+                      slug: "/guitars---amps/effects---pedals/delay"
+                  },
+                  {
+                      name: "Distortion",
+                      slug: "/guitars---amps/effects---pedals/distortion"
+                  },
+                  {
+                      name: "EQ",
+                      slug: "/guitars---amps/effects---pedals/eq-effects-pedals"
+                  },
+                  {
+                      name: "Flanger",
+                      slug: "/guitars---amps/effects---pedals/flanger"
+                  },
+                  {
+                      name: "Fuzz",
+                      slug: "/guitars---amps/effects---pedals/fuzz"
+                  },
+                  {
+                      name: "Guitar Synth",
+                      slug: "/guitars---amps/effects---pedals/guitar-synth"
+                  },
+                  {
+                      name: "Looper",
+                      slug: "/guitars---amps/effects---pedals/loopers"
+                  },
+                  {
+                      name: "Multi-Effects",
+                      slug: "/guitars---amps/effects---pedals/multi-effects"
+                  },
+                  {
+                      name: "Noise Reduction",
+                      slug: "/guitars---amps/effects---pedals/noise-reduction"
+                  },
+                  {
+                      name: "Overdrive",
+                      slug: "/guitars---amps/effects---pedals/overdrive"
+                  },
+                  {
+                      name: "Phaser",
+                      slug: "/guitars---amps/effects---pedals/phaser"
+                  },
+                  {
+                      name: "Pitch Shifter & Octave",
+                      slug: "/guitars---amps/effects---pedals/pitch-shifter---octave"
+                  },
+                  {
+                      name: "Power Supply",
+                      slug: "/guitars---amps/effects---pedals/power-supply"
+                  },
+                  {
+                      "name": "Reverb",
+                      slug: "/guitars---amps/effects---pedals/reverb"
+                  },
+                  {
+                      "name": "Switching Systems, Controllers, & DI Boxes",
+                      slug: "/guitars---amps/effects---pedals/switching-systems-controllers---di-boxes"
+                  },
+                  {
+                      "name": "Tremolo, Vibrato, & Rotary",
+                      slug: "/guitars---amps/effects---pedals/tremolo-vibrato---rotary"
+                  },
+                  {
+                      "name": "Tuner - Pedal & Rack",
+                      slug: "/guitars---amps/effects---pedals/tuner-pedals---rack"
+                  },
+                  {
+                      "name": "Volume & Expression",
+                      slug: "/guitars---amps/effects---pedals/volume---expression"
+                  },
+                  {
+                      "name": "Wah & Filtering",
+                      slug: "/guitars---amps/effects---pedals/wah---filtering"
+                  },
+                  {
+                      "name": "Other",
+                      slug: "/guitars---amps/effects---pedals/other-effects-pedals"
+                  }
+              ]
           },
           {
-            name: "Effects & Pedals",
-            slug: "/guitars---amps/effects---pedals",
-            all_categories: '/categories/guitar-effects-pedals',
-            menu: [
-              {
-                name: "Bass Guitar Specific",
-                slug: "/guitars---amps/effects---pedals/bass-guitar-specific-effects-pedals"
-              },
-              {
-                name: "Boost",
-                slug: "/guitars---amps/effects---pedals/boost-effects-pedals"
-              },
-              {
-                name: "Chorus",
-                slug: "/guitars---amps/effects---pedals/chorus-effects-pedals"
-              },
-              {
-                name: "Compression",
-                slug: "/guitars---amps/effects---pedals/compression"
-              },
-              {
-                name: "Delay",
-                slug: "/guitars---amps/effects---pedals/delay"
-              },
-              {
-                name: "Distortion",
-                slug: "/guitars---amps/effects---pedals/distortion"
-              },
-              {
-                name: "EQ",
-                slug: "/guitars---amps/effects---pedals/eq-effects-pedals"
-              },
-              {
-                name: "Flanger",
-                slug: "/guitars---amps/effects---pedals/flanger"
-              },
-              {
-                name: "Fuzz",
-                slug: "/guitars---amps/effects---pedals/fuzz"
-              },
-              {
-                name: "Guitar Synth",
-                slug: "/guitars---amps/effects---pedals/guitar-synth"
-              },
-              {
-                name: "Looper",
-                slug: "/guitars---amps/effects---pedals/loopers"
-              },
-              {
-                name: "Multi-Effects",
-                slug: "/guitars---amps/effects---pedals/multi-effects"
-              },
-              {
-                name: "Noise Reduction",
-                slug: "/guitars---amps/effects---pedals/noise-reduction"
-              },
-              {
-                name: "Overdrive",
-                slug: "/guitars---amps/effects---pedals/overdrive"
-              },
-              {
-                name: "Phaser",
-                slug: "/guitars---amps/effects---pedals/phaser"
-              },
-              {
-                name: "Pitch Shifter & Octave",
-                slug: "/guitars---amps/effects---pedals/pitch-shifter---octave"
-              },
-              {
-                name: "Power Supply",
-                slug: "/guitars---amps/effects---pedals/power-supply"
-              },
-              {
-                "name": "Reverb",
-                slug: "/guitars---amps/effects---pedals/reverb"
-              },
-              {
-                "name": "Switching Systems, Controllers, & DI Boxes",
-                slug: "/guitars---amps/effects---pedals/switching-systems-controllers---di-boxes"
-              },
-              {
-                "name": "Tremolo, Vibrato, & Rotary",
-                slug: "/guitars---amps/effects---pedals/tremolo-vibrato---rotary"
-              },
-              {
-                "name": "Tuner - Pedal & Rack",
-                slug: "/guitars---amps/effects---pedals/tuner-pedals---rack"
-              },
-              {
-                "name": "Volume & Expression",
-                slug: "/guitars---amps/effects---pedals/volume---expression"
-              },
-              {
-                "name": "Wah & Filtering",
-                slug: "/guitars---amps/effects---pedals/wah---filtering"
-              },
-              {
-                "name": "Other",
-                slug: "/guitars---amps/effects---pedals/other-effects-pedals"
-              }
-            ]
+              "name": "Folk Instruments",
+              slug: "/guitars---amps/folk-instruments",
+              all_categories: '/categories/folk-instruments',
+              menu: [
+                  {
+                      "name": "Autoharps & Omnichords",
+                      slug: "/guitars---amps/folk-instruments/autoharps---omnichords"
+                  },
+                  {
+                      "name": "Banjos",
+                      slug: "/guitars---amps/folk-instruments/banjos---folk-instruments"
+                  },
+                  {
+                      "name": "Dulcimers",
+                      slug: "/guitars---amps/folk-instruments/dulcimers"
+                  },
+                  {
+                      "name": "Mandolins",
+                      slug: "/guitars---amps/folk-instruments/mandolins"
+                  },
+                  {
+                      "name": "Strumsticks",
+                      slug: "/guitars---amps/folk-instruments/strumsticks"
+                  }
+              ]
           },
           {
-            "name": "Folk Instruments",
-            slug: "/guitars---amps/folk-instruments",
-            all_categories: '/categories/folk-instruments',
-            menu: [
-              {
-                "name": "Autoharps & Omnichords",
-                slug: "/guitars---amps/folk-instruments/autoharps---omnichords"
-              },
-              {
-                "name": "Banjos",
-                slug: "/guitars---amps/folk-instruments/banjos---folk-instruments"
-              },
-              {
-                "name": "Dulcimers",
-                slug: "/guitars---amps/folk-instruments/dulcimers"
-              },
-              {
-                "name": "Mandolins",
-                slug: "/guitars---amps/folk-instruments/mandolins"
-              },
-              {
-                "name": "Strumsticks",
-                slug: "/guitars---amps/folk-instruments/strumsticks"
-              }
-            ]
+              "name": "Ukuleles",
+              slug: "/guitars---amps/ukuleles",
+              all_categories: '/categories/ukuleles',
+              menu: [
+                  {
+                      "name": "Soprano",
+                      slug: "/guitars---amps/ukuleles/soprano-ukuleles"
+                  },
+                  {
+                      "name": "Concert",
+                      slug: "/guitars---amps/ukuleles/concert-ukuleles"
+                  },
+                  {
+                      "name": "Tenor",
+                      slug: "/guitars---amps/ukuleles/tenor-ukuleles"
+                  },
+                  {
+                      "name": "Baritone",
+                      slug: "/guitars---amps/ukuleles/baritone-ukuleles"
+                  },
+                  {
+                      "name": "Other",
+                      slug: "/guitars---amps/ukuleles/other-ukuleles"
+                  }
+              ]
           },
           {
-            "name": "Ukuleles",
-            slug: "/guitars---amps/ukuleles",
-            all_categories: '/categories/ukuleles',
-            menu: [
-              {
-                "name": "Soprano",
-                slug: "/guitars---amps/ukuleles/soprano-ukuleles"
-              },
-              {
-                "name": "Concert",
-                slug: "/guitars---amps/ukuleles/concert-ukuleles"
-              },
-              {
-                "name": "Tenor",
-                slug: "/guitars---amps/ukuleles/tenor-ukuleles"
-              },
-              {
-                "name": "Baritone",
-                slug: "/guitars---amps/ukuleles/baritone-ukuleles"
-              },
-              {
-                "name": "Other",
-                slug: "/guitars---amps/ukuleles/other-ukuleles"
-              }
-            ]
-          },
-          {
-            "name": "Accessories",
-            slug: "/guitars---amps/guitar-accessories",
-            all_categories: '/categories/guitar-amp-accessories',
-            menu: [
-              {
-                "name": "Adaptors",
-                slug: "/guitars---amps/guitar-accessories/guitar-adaptors"
-              },
-              {
-                "name": "Heads",
-                slug: "/guitars---amps/guitar-accessories/banjo-heads"
-              },
-              {
-                "name": "Cables",
-                slug: "/guitars---amps/guitar-accessories/guitar-cables"
-              },
-              {
-                "name": "Capos",
-                slug: "/guitars---amps/guitar-accessories/capos"
-              },
-              {
-                "name": "Cases",
-                slug: "/guitars---amps/guitar-accessories/guitar-cases"
-              },
-              {
-                "name": "Covers",
-                slug: "/guitars---amps/guitar-accessories/guitar---amp-covers"
-              },
-              {
-                "name": "Foot Stools",
-                slug: "/guitars---amps/guitar-accessories/footstools"
-              },
-              {
-                "name": "Gig Bags",
-                slug: "/guitars---amps/guitar-accessories/guitar-gig-bags"
-              },
-              {
-                "name": "Hangers & Hooks",
-                slug: "/guitars---amps/guitar-accessories/guitar-hangers-and-hooks"
-              },
-              {
-                "name": "Humidifiers",
-                slug: "/guitars---amps/guitar-accessories/guitar-humidifiers"
-              },
-              {
-                "name": "Lubricants",
-                slug: "/guitars---amps/guitar-accessories/lubricants-guitars"
-              },
-              {
-                "name": "Picks",
-                slug: "/guitars---amps/guitar-accessories/picks"
-              },
-              {
-                "name": "Pickups",
-                slug: "/guitars---amps/guitar-accessories/pickups"
-              },
-              {
-                "name": "Polishes/ Cleaners & Cloths",
-                slug: "/guitars---amps/guitar-accessories/guitar-polishes-cleaners---clothes"
-              },
-              {
-                "name": "Preamps",
-                slug: "/guitars---amps/guitar-accessories/guitar-preamps"
-              },
-              {
-                "name": "Repair Equipment & Parts",
-                slug: "/guitars---amps/guitar-accessories/guitar-repair-equipment---parts"
-              },
-              {
-                "name": "Slides",
-                slug: "/guitars---amps/guitar-accessories/guitar-slides"
-              },
-              {
-                "name": "Stands",
-                slug: "/guitars---amps/guitar-accessories/guitar-stands"
-              },
-              {
-                "name": "Straps",
-                slug: "/guitars---amps/guitar-accessories/guitar-straps"
-              },
-              {
-                "name": "Strings",
-                slug: "/guitars---amps/guitar-accessories/guitar-strings"
-              },
-              {
-                "name": "Other",
-                slug: "/guitars---amps/guitar-accessories/other-guitar-accessories"
-              }
-            ]
+              "name": "Accessories",
+              slug: "/guitars---amps/guitar-accessories",
+              all_categories: '/categories/guitar-amp-accessories',
+              menu: [
+                  {
+                      "name": "Adaptors",
+                      slug: "/guitars---amps/guitar-accessories/guitar-adaptors"
+                  },
+                  {
+                      "name": "Heads",
+                      slug: "/guitars---amps/guitar-accessories/banjo-heads"
+                  },
+                  {
+                      "name": "Cables",
+                      slug: "/guitars---amps/guitar-accessories/guitar-cables"
+                  },
+                  {
+                      "name": "Capos",
+                      slug: "/guitars---amps/guitar-accessories/capos"
+                  },
+                  {
+                      "name": "Cases",
+                      slug: "/guitars---amps/guitar-accessories/guitar-cases"
+                  },
+                  {
+                      "name": "Covers",
+                      slug: "/guitars---amps/guitar-accessories/guitar---amp-covers"
+                  },
+                  {
+                      "name": "Foot Stools",
+                      slug: "/guitars---amps/guitar-accessories/footstools"
+                  },
+                  {
+                      "name": "Gig Bags",
+                      slug: "/guitars---amps/guitar-accessories/guitar-gig-bags"
+                  },
+                  {
+                      "name": "Hangers & Hooks",
+                      slug: "/guitars---amps/guitar-accessories/guitar-hangers-and-hooks"
+                  },
+                  {
+                      "name": "Humidifiers",
+                      slug: "/guitars---amps/guitar-accessories/guitar-humidifiers"
+                  },
+                  {
+                      "name": "Lubricants",
+                      slug: "/guitars---amps/guitar-accessories/lubricants-guitars"
+                  },
+                  {
+                      "name": "Picks",
+                      slug: "/guitars---amps/guitar-accessories/picks"
+                  },
+                  {
+                      "name": "Pickups",
+                      slug: "/guitars---amps/guitar-accessories/pickups"
+                  },
+                  {
+                      "name": "Polishes/ Cleaners & Cloths",
+                      slug: "/guitars---amps/guitar-accessories/guitar-polishes-cleaners---clothes"
+                  },
+                  {
+                      "name": "Preamps",
+                      slug: "/guitars---amps/guitar-accessories/guitar-preamps"
+                  },
+                  {
+                      "name": "Repair Equipment & Parts",
+                      slug: "/guitars---amps/guitar-accessories/guitar-repair-equipment---parts"
+                  },
+                  {
+                      "name": "Slides",
+                      slug: "/guitars---amps/guitar-accessories/guitar-slides"
+                  },
+                  {
+                      "name": "Stands",
+                      slug: "/guitars---amps/guitar-accessories/guitar-stands"
+                  },
+                  {
+                      "name": "Straps",
+                      slug: "/guitars---amps/guitar-accessories/guitar-straps"
+                  },
+                  {
+                      "name": "Strings",
+                      slug: "/guitars---amps/guitar-accessories/guitar-strings"
+                  },
+                  {
+                      "name": "Other",
+                      slug: "/guitars---amps/guitar-accessories/other-guitar-accessories"
+                  }
+              ]
           }
-        ]
+      ]
       },
       {
         name: "Drums & Percussion",
         slug: "/drums---percussion",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/drums-percussion",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/alesis-logo_200x200.jpg', slug: '/brands/alesis' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/dw-logo_200x200.jpg', slug: '/brands/dw' },
@@ -467,7 +467,7 @@ export const items = [
           {
             name: "Concert Percussion",
             slug: "/drums---percussion/concert-percussion",
-            all_categories: "/categories/classical-guitars",
+            all_categories: "/categories/concert-percussion",
             menu: [
               {
                 name: "Bells",
@@ -767,7 +767,7 @@ export const items = [
       {
         name: "Pianos & Keyboards",
         slug: "/pianos---keyboards",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/pianos-keyboards",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/bach-logo_200x200.jpg', slug: '/rentals' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/buffet-logo_200x200.jpg', slug: '/rentals' },
@@ -786,7 +786,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/pianos---keyboards/piano---keyboard-accessories",
-            all_categories: "",
+            all_categories: "/categories/piano-keyboard-accessories",
             menu: [
               {
                 name: "Adaptors",
@@ -860,31 +860,31 @@ export const items = [
           {
             name: "Home Digital & Hybrid Pianos",
             slug: "/pianos---keyboards/home-digital---hybrid-pianos",
-            all_categories: "",
+            all_categories: "/categories/acoustic-pianos",
             menu: []
           },
           {
             name: "Home Portable Keyboards",
             slug: "/pianos---keyboards/home-portable-keyboards",
-            all_categories: "",
+            all_categories: "/categories/acoustic-pianos",
             menu: []
           },
           {
             name: "Keyboard Amps",
             slug: "/pianos---keyboards/keyboard-amps",
-            all_categories: "",
+            all_categories: "/categories/acoustic-pianos",
             menu: []
           },
           {
             name: "Keyboards & Synths",
             slug: "/pianos---keyboards/keyboards---synths",
-            all_categories: "",
+            all_categories: "/categories/acoustic-pianos",
             menu: []
           },
           {
             name: "MIDI Controllers",
             slug: "/pianos---keyboards/midi-controllers",
-            all_categories: "",
+            all_categories: "/categories/midi-controllers",
             menu: [
               {
                 name: "Fader Controllers",
@@ -907,7 +907,7 @@ export const items = [
           {
             name: "Modules & Samplers",
             slug: "/pianos---keyboards/modules---samplers",
-            all_categories: "",
+            all_categories: "/categories/modules-samplers",
             menu: [
               {
                 name: "Samplers",
@@ -922,7 +922,7 @@ export const items = [
           {
             name: "Stage Pianos",
             slug: "/pianos---keyboards/stage-pianos",
-            all_categories: "",
+            all_categories: "/categories/acoustic-pianos",
             menu: []
           }
         ]
@@ -930,7 +930,7 @@ export const items = [
       {
         name: "Band & Orchestra",
         slug: "/brass-woodwind---orchestra",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/band-orchestra",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/bach-logo_200x200.jpg', slug: '/rentals' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/buffet-logo_200x200.jpg', slug: '/rentals' },
@@ -949,7 +949,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/brass-woodwind---orchestra/brass-woodwind---orchestral-accessories",
-            all_categories: "",
+            all_categories: "/categories/band-orchestra-accessories",
             menu: [
               {
                 name: "Batons",
@@ -1100,7 +1100,7 @@ export const items = [
           {
             name: "Brass Instruments",
             slug: "/brass-woodwind---orchestra/brass-instruments",
-            all_categories: "",
+            all_categories: "/categories/brass-instruments",
             menu: [
               {
                 name: "Flugelhorns",
@@ -1147,7 +1147,7 @@ export const items = [
           {
             name: "Orchestra Strings",
             slug: "/brass-woodwind---orchestra/orchestral-stringed-instrument",
-            all_categories: "",
+            all_categories: "/categories/orchestral-strings",
             menu: [
               {
                 name: "Cellos",
@@ -1170,7 +1170,7 @@ export const items = [
           {
             name: "Recorders, Fifes, & Whistles",
             slug: "/brass-woodwind---orchestra/recorders-fifes---whistles",
-            all_categories: "",
+            all_categories: "/categories/recorders-fifes-whistles",
             menu: [
               {
                 name: "Fifes",
@@ -1189,7 +1189,7 @@ export const items = [
           {
             name: "Woodwind Instruments",
             slug: "/brass-woodwind---orchestra/woodwind-instruments",
-            all_categories: "",
+            all_categories: "/categories/woodwind-instruments",
             menu: [
               {
                 name: "Flutes",
@@ -1218,7 +1218,7 @@ export const items = [
       {
         name: "Other Instruments & Accessories",
         slug: "/other-instruments---accessories",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/other-instruments-accessories",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/akg-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/at-logo_200x200.jpg', slug: '' },
@@ -1237,7 +1237,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/other-instruments---accessories/other-accessories",
-            all_categories: "",
+            all_categories: "/categories/instrument-accessories",
             menu: [
               {
                 name: "Batteries",
@@ -1276,13 +1276,13 @@ export const items = [
           {
             name: "Accordions",
             slug: "/other-instruments---accessories/accordions",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           },
           {
             name: "Harmonicas",
             slug: "/other-instruments---accessories/harmonicas-melodicas---melodeons",
-            all_categories: "",
+            all_categories: "/categories/harmonicas",
             menu: [
               {
                 name: "Harmonica Sets",
@@ -1369,31 +1369,31 @@ export const items = [
           {
             name: "Harps",
             slug: "/other-instruments---accessories/harps",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           },
           {
             name: "Headphones",
             slug: "/other-instruments---accessories/headphones",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           },
           {
             name: "Melodicas & Melodeons",
             slug: "/other-instruments---accessories/harmonicas-melodicas---melodeons/melodicas---melodeons",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           },
           {
             name: "Music Stands",
             slug: "/other-instruments---accessories/music-stands",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           },
           {
             name: "Whistles",
             slug: "/other-instruments---accessories/whistles",
-            all_categories: "",
+            all_categories: "/categories/other-instruments-accessories",
             menu: []
           }
         ]
@@ -1401,7 +1401,7 @@ export const items = [
       {
         name: "Live Sound",
         slug: "/live-sound",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/live-sound",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/behringer-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/digiflex-logo_200x200.jpg', slug: '' },
@@ -1420,7 +1420,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/live-sound/live-sound-accessories",
-            all_categories: "",
+            all_categories: "/categories/live-sound-accessories",
             menu: [
               {
                 name: "Acoustic Treatment",
@@ -1515,13 +1515,13 @@ export const items = [
           {
             name: "Direct Boxes",
             slug: "/live-sound/direct-boxes",
-            all_categories: "",
+            all_categories: "/categories/live-sound",
             menu: []
           },
           {
             name: "Microphones",
             slug: "/live-sound/microphones",
-            all_categories: "",
+            all_categories: "/categories/microphones",
             menu: [
               {
                 name: "Wired Microphones",
@@ -1536,7 +1536,7 @@ export const items = [
           {
             name: "Mixers",
             slug: "/live-sound/mixers",
-            all_categories: "",
+            all_categories: "/categories/live-sound-mixers",
             menu: [
               {
                 name: "Powered Mixers",
@@ -1547,25 +1547,25 @@ export const items = [
           {
             name: "Portable PA Systems",
             slug: "/live-sound/portable-pa-systems",
-            all_categories: "",
+            all_categories: "/categories/live-sound",
             menu: []
           },
           {
             name: "Power Amps",
             slug: "/live-sound/power-amps",
-            all_categories: "",
+            all_categories: "/categories/live-sound",
             menu: []
           },
           {
             name: "Preamps",
             slug: "/live-sound/audio-preamps",
-            all_categories: "",
+            all_categories: "/categories/live-sound",
             menu: []
           },
           {
             name: "Speakers",
             slug: "/live-sound/speakers",
-            all_categories: "",
+            all_categories: "/categories/live-sound",
             menu: []
           }
         ]
@@ -1573,13 +1573,12 @@ export const items = [
       {
         name: "Recording",
         slug: "/recording",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/recording",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/behringer-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/focusrite-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/jbl-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/krk-logo_200x200.jpg', slug: '' },
-          { image: 'https://cosmo.vteximg.com.br/arquivos/mackie-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/mackie-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/m-audio-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/ni_logo_200x200.jpg', slug: '' },
@@ -1593,7 +1592,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/recording/recording-accessories",
-            all_categories: "",
+            all_categories: "/categories/recording-accessories",
             menu: [
               {
                 name: "Adaptors",
@@ -1628,25 +1627,25 @@ export const items = [
           {
             name: "Field Recorders",
             slug: "/recording/field-recorders",
-            all_categories: "",
+            all_categories: "/categories/recording",
             menu: []
           },
           {
             name: "Interfaces",
             slug: "/recording/recording-interfaces",
-            all_categories: "",
+            all_categories: "/categories/recording",
             menu: []
           },
           {
             name: "Monitors",
             slug: "/recording/recording-monitors",
-            all_categories: "",
+            all_categories: "/categories/recording",
             menu: []
           },
           {
             name: "Software",
             slug: "/recording/software",
-            all_categories: "",
+            all_categories: "/categories/recording-software",
             menu: [
               {
                 name: "Notation & Scoring",
@@ -1673,7 +1672,7 @@ export const items = [
           {
             name: "Studio Recording",
             slug: "/recording/studio-recording",
-            all_categories: "",
+            all_categories: "/categories/studio-recording",
             menu: [
               {
                 name: "Computer Cards & Upgrades",
@@ -1696,7 +1695,7 @@ export const items = [
           {
             name: "Video Recorders",
             slug: "/recording/video-recorders",
-            all_categories: "",
+            all_categories: "/categories/recording",
             menu: []
           }
         ]
@@ -1722,7 +1721,7 @@ export const items = [
           {
             name: "Clothing & Apparel",
             slug: "/apparel-homeware---gifts/clothing---apparel",
-            all_categories: "",
+            all_categories: "/categories/clothing-apparel",
             menu: [
               {
                 name: "Babies, Toddlers, & Infants",
@@ -1773,25 +1772,25 @@ export const items = [
           {
             name: "Gift Cards",
             slug: "/apparel-homeware---gifts/gift-cards",
-            all_categories: "",
+            all_categories: "/categories/apparel-homeware-gifts",
             menu: []
           },
           {
             name: "Hand Bags & Wallets",
             slug: "/apparel-homeware---gifts/hand-bags-wallets-cases---holders",
-            all_categories: "",
+            all_categories: "/categories/apparel-homeware-gifts",
             menu: []
           },
           {
             name: "Holiday Ornaments & Decorations",
             slug: "/apparel-homeware---gifts/holiday-ornaments---decorations",
-            all_categories: "",
+            all_categories: "/categories/apparel-homeware-gifts",
             menu: []
           },
           {
             name: "Household & Collectibles",
             slug: "/apparel-homeware---gifts/household---collectibles",
-            all_categories: "",
+            all_categories: "/categories/household-collectibles",
             menu: [
               {
                 name: "Bath & Body Products",
@@ -1854,7 +1853,7 @@ export const items = [
           {
             name: "Jewelry",
             slug: "/apparel-homeware---gifts/jewelry",
-            all_categories: "",
+            all_categories: "/categories/jewelry-watches-keychains-glasses",
             menu: [
               {
                 name: "Bracelets & Watches",
@@ -1889,7 +1888,7 @@ export const items = [
           {
             name: "Stationery, Office Supplies, & Party Supplies",
             slug: "/apparel-homeware---gifts/stationary-office---party-supplies",
-            all_categories: "",
+            all_categories: "/categories/stationery-office-party-supplies",
             menu: [
               {
                 name: "Calendars",
@@ -1922,7 +1921,7 @@ export const items = [
       {
         name: "Print Music, Media, & Vinyl",
         slug: "/print-music-media---vinyl",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/print-music-media-vinyl",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/alfred-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/fgh-logo_200x200.jpg', slug: '' },
@@ -1935,7 +1934,7 @@ export const items = [
           {
             name: "Print Music",
             slug: "/print-music-media---vinyl/print-music",
-            all_categories: "",
+            all_categories: "/categories/print-music",
             menu: [
               {
                 name: "Band & Orchestra",
@@ -2016,7 +2015,7 @@ export const items = [
           {
             name: "DVD &  CD-ROM",
             slug: "/print-music-media---vinyl/dvd-cd-video---software",
-            all_categories: "",
+            all_categories: "/categories/performance-education-dvd",
             menu: [
               {
                 name: "Classroom",
@@ -2033,7 +2032,7 @@ export const items = [
       {
         name: "DJ & Lighting",
         slug: "/dj---lighting",
-        all_categories: "/categories/apparel-homeware-gifts",
+        all_categories: "/categories/dj-lighting",
         brands: [
           { image: 'https://cosmo.vteximg.com.br/arquivos/adj-logo_200x200.jpg', slug: '' },
           { image: 'https://cosmo.vteximg.com.br/arquivos/akai-pro-logo-200x200.jpg', slug: '' },
@@ -2052,6 +2051,7 @@ export const items = [
           {
             name: "Accessories",
             slug: "/dj---lighting/dj---lighting-accessories",
+            all_categories: "/categories/dj-lighting-accessories",
             menu: [
               {
                 name: "Adaptors",
@@ -2114,16 +2114,19 @@ export const items = [
           {
             name: "DJ Controllers",
             slug: "/dj---lighting/dj-controllers",
+            all_categories: "/categories/dj-lighting",
             menu: []
           },
           {
             name: "Fog Machines & Hazers",
             slug: "/dj---lighting/fog-machines---hazers",
+            all_categories: "/categories/dj-lighting",
             menu: []
           },
           {
             name: "Karaoke",
             slug: "/dj---lighting/karaoke",
+            all_categories: "/categories/karaoke",
             menu: [
               {
                 name: "Karaoke Machines",
@@ -2138,21 +2141,25 @@ export const items = [
           {
             name: "Light Controllers",
             slug: "/dj---lighting/light-controllers",
+            all_categories: "/categories/dj-lighting",
             menu: []
           },
           {
             name: "Lighting",
             slug: "/dj---lighting/dj-lighting",
+            all_categories: "/categories/dj-lighting",
             menu: []
           },
           {
             name: "Mixers",
             slug: "/dj---lighting/dj-mixers",
+            all_categories: "/categories/dj-lighting",
             menu: []
           },
           {
             name: "Turntables",
             slug: "/dj---lighting/turntables",
+            all_categories: "/categories/dj-lighting",
             menu: []
           }
         ]
@@ -2160,9 +2167,9 @@ export const items = [
     ],
   },
   {
-    name: 'RENT',
+    name: 'Rent',
     slug: '/pages/repair',
-    departaments: [
+    menu: [
       { name: 'Band & Orchestra Rentals', slug: '/rentals', brands: [], menu: [] },
       { name: 'Pro Rentals', slug: '/pages/pro-rentals', brands: [], menu: [] },
       { name: 'Piano Rentals', slug: '/rentalsquot', brands: [], menu: [] },
@@ -2170,9 +2177,9 @@ export const items = [
     ],
   },
   {
-    name: 'REPAIR',
+    name: 'Repair',
     slug: '/pages/repair',
-    departaments: [
+    menu: [
       { name: 'Cosmo Music Repair Shop', slug: '/pages/repair', brands: [], menu: [] },
       { name: 'Electronics Guitars', slug: '/pages/repair#guitar', brands: [], menu: [] },
       { name: 'Plek Station', slug: '/pages/plek', brands: [], menu: [] },
@@ -2182,9 +2189,9 @@ export const items = [
     ],
   },
   {
-    name: 'LEARN',
+    name: 'Learn',
     slug: '/pages/school-of-music',
-    departaments: [
+    menu: [
       { name: 'School of Music', slug: '/pages/school-of-music', brands: [], menu: [] },
       {
         name: 'Early Childhood Music Movement Programs',
@@ -2198,9 +2205,9 @@ export const items = [
     ],
   },
   {
-    name: 'PRO',
+    name: 'Cosmo Pro',
     slug: '',
-    departaments: [
+    menu: [
       { name: 'Cosmo Pro', slug: '/pages/cosmo-pro', brands: [], menu: [] },
       { name: 'Event Production ', slug: '/pages/event-production', brands: [], menu: [] },
       { name: 'GearHeadz', slug: '/pages/gearheadz', brands: [], menu: [] },
@@ -2211,9 +2218,9 @@ export const items = [
     ],
   },
   {
-    name: 'NEWS',
+    name: 'News & Promo',
     slug: '/',
-    departaments: [
+    menu: [
       { name: 'Reviews News', slug: '/blogs/reviews-news', brands: [], menu: [] },
       { name: 'Rebates Promotions', slug: '/blogs/rebates-promotions', brands: [], menu: [] },
       { name: 'Events', slug: '/blogs/events', brands: [], menu: [] },

@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apollo/client@^3.6.9":
-  "integrity" "sha512-hp4OvrH1ZIQACRYcIrh/C0WFnY7IM7G6nlTpC8DSTEWxfZQ2kvpvDY0I/hYmCs0oAVrg26g3ANEdOzGWTcYbPg=="
-  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.7.0.tgz"
-  "version" "3.7.0"
+"@apollo/client@^3.7.1":
+  "integrity" "sha512-xu5M/l7p9gT9Fx7nF3AQivp0XukjB7TM7tOd5wifIpI8RskYveL4I+rpTijzWrnqCPZabkbzJKH7WEAKdctt9w=="
+  "resolved" "https://registry.npmjs.org/@apollo/client/-/client-3.7.1.tgz"
+  "version" "3.7.1"
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.0"
@@ -1822,10 +1822,10 @@
   dependencies:
     "@types/react" "^17"
 
-"@types/react@*", "@types/react@^16.8.0", "@types/react@^18.0.20":
-  "integrity" "sha512-7QUCOxvFgnD5Jk8ZKlUAhVcRj7GuJRjnjjiY/IUBWKgOlnvDvTMLD4RTF7NPyVmbRhNrbomZiOepg7M/2Kj1mA=="
-  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.21.tgz"
-  "version" "18.0.21"
+"@types/react@*", "@types/react@^16.8.0", "@types/react@^18.0.23":
+  "integrity" "sha512-R1wTULtCiJkudAN2DJGoYYySbGtOdzZyUWAACYinKdiQC8auxso4kLDUhQ7AJ2kh3F6A6z4v69U6tNY39hihVQ=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-18.0.23.tgz"
+  "version" "18.0.23"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"

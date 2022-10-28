@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import useOutsideClick from '../../utils/useOutsideClick'
+import useOutsideClick from '../../hooks/useOutsideClick'
 import './styles.scss'
 
 const SearchBar = () => {
@@ -72,6 +72,7 @@ const SearchBar = () => {
               type="text"
               name="search-bar"
               value={search}
+              autoComplete="off"
             />
           </form>
         </section>

@@ -4,6 +4,7 @@
     background-color: #fff;
     border: none;
     position: relative;
+    padding: 16px;
 
     .header__utilities-item-arrow{
       position: absolute;
@@ -15,9 +16,9 @@
       border-right: 6px solid rgba(0,0,0,0);
       border-bottom: 8px solid #2196f3;
       border-left: 6px solid rgba(0,0,0,0);
-      top: 36px;
+      top: 46px;
       @media (max-width: 760px) {
-        top: 52px;
+        top: 65px;
       }
     }
   }
@@ -26,8 +27,12 @@
     &.svg-icon--header-search {
       background-color: #fff;
       fill: #2196f3;
-      width: 27.3px;
-      height: 28.6px;
+      width: 20px;
+      height: 20px;
+      @media (max-width: 760px) {
+        width: 27.3px;
+        height: 28.6px;
+      }
     }
   }
   .header-search {
@@ -54,8 +59,9 @@
         font-size: 20px;
         font-weight: 300;
         text-align: center;
-        background: transparent;
-        border: 0;
+        background: #2196f3;
+        border: none;
+        box-shadow: none;
         border-bottom: 1px solid rgba(255,255,255,0.5);
         border-radius: 0;
         outline: 0;

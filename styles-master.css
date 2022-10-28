@@ -1,13 +1,15 @@
  /* Content copied from "checkout5-custom.css" at 2019-03-01T05:12:59.334Z */
 
   /* /files/checkout5-custom.css */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
   /* Displays the option to enter a foreign document */
   .document-box {
     display: block;
 }
 
+html {
+   font-size: 62.5%;
+}
 /* Displays the option to enter an international phone */
 .phone-box {
     display: block;
@@ -17,7 +19,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif; 
 }
 
 /*header start*/
@@ -74,11 +75,11 @@
 
 .container_header_menu .title {
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    color: #000000;
-    font-size: 13px;
-    font-weight: 500;
+  -ms-flex: 1;
+  flex: 1;
+  color: #000000;
+  font-size: 1.3rem;;
+  font-weight: 400;
 }
 
 .container_header_menu .svg-icon {
@@ -177,8 +178,13 @@
 .container_header_menu_info_parr_educators__button::before{
   content: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='18' viewBox='0 0 19 18' class='svg-icon'%3E%3Ctitle%3EGraduation cap%3C/title%3E%3Cpath d='M18.246 4.453L10.132.157a1.349 1.349 0 00-1.264 0L.754 4.453C.29 4.699 0 5.187 0 5.727s.289 1.029.754 1.275l.836.443-.005 3.45c0 .683.283 1.315.78 1.733 2.37 1.993 4.756 2.989 7.14 2.989 1.436 0 2.87-.369 4.3-1.09-.345.577-.742 1.345-.742 1.837 0 .902.71 1.636 1.583 1.636s1.583-.734 1.583-1.636c0-.619-.625-1.672-.989-2.232l.001-.457c.466-.315.933-.657 1.397-1.05a2.241 2.241 0 00.78-1.722l.005-3.466.822-.435c.466-.246.755-.735.755-1.275 0-.54-.289-1.028-.754-1.274zM3.335 11.426a.955.955 0 01-.335-.74L3.005 8l5.937 3.066a1.337 1.337 0 001.23 0L14 9.089l-.004 3.592c-3.562 2.105-7.067 1.693-10.661-1.255zM14.5 16c-.275 0-.5-.14-.5-.31.013-.106.214-.376.5-.69.284.312.485.58.5.689-.003.172-.226.311-.5.311zm1.496-5.248c0 .295-.13.577-.345.751A15.63 15.63 0 0115 12l.004-3.492L16 8l-.004 2.752zm1.893-5.07L14.534 7.42 11.1 5.69c.008-.064.019-.124.019-.189A1.63 1.63 0 009.5 3.864 1.63 1.63 0 007.881 5.5 1.63 1.63 0 009.5 7.136c.386 0 .737-.143 1.015-.372l2.677 1.35-3.599 1.864a.206.206 0 01-.185 0L1.11 5.682a.204.204 0 010-.365l8.297-4.295a.206.206 0 01.185 0l8.297 4.296c.053.027.11.09.11.182s-.057.155-.11.182zM10 5.5a.5.5 0 11-1.002-.002A.5.5 0 0110 5.5z'%3E%3C/path%3E%3C/svg%3E%0A");
   margin: 0 2px;
+    transform: translateY(4px);
+transition: all .3s ease-in-out;
 }
+.container_header_menu_info_parr_educators__button:hover::before{
+filter: invert(1);
 
+}
 .container_header_menu_info_parr_educators__button:hover,.container_header_menu_info_parr_story__button:hover {
     background-color: #2196f3;
     color: #fff;
@@ -195,19 +201,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 54px;
+    height: 56px;
     padding-left: 254px;
 }
 
 .container_header_accounts {
-    height: 54px;
+    height: 56px;
     border-left: 1px solid #dbdbdb;
     display: flex;
     align-items: center;
     justify-content: center;
     grid-area: account;
     width: 200px;
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
     align-items: center;
     border-left: 1px solid #dbdbdb;
@@ -348,10 +354,10 @@ td.product-price {
 .new {
     display: grid;
     grid-template-columns: 250px auto 100px 200px;
-    grid-template-rows: 42px 54px;
+    grid-template-rows: 42px 56px;
     grid-template-areas:
         "image title story school"
-        "image menu phone account";
+        "image menu menu account";
 }
 
 @media (max-width: 690px) {
@@ -360,6 +366,12 @@ td.product-price {
 
 #search-bar {
 display: none;
+}
+.container_header_menu::before{
+width: 100%;
+}
+.container_header_menu .title{
+    display: contents;
 }
 .container_header_accounts {
   width: 82%;
@@ -373,6 +385,7 @@ border: none;
         grid-template-areas:
             "title title title"
             "menu image account";
+padding: 0 16px;
     }
 
     .container_header_menu_info_parr_story,
