@@ -18,7 +18,7 @@ let oldHref = document.location.href;
 
 const App = () => {
    
-    ReactDOM.render(<Menu />, document.getElementById('departaments'));
+    ReactDOM.render(<Menu />, document.getElementById('departments'));
     ReactDOM.render(<SearchBar />, document.getElementById('search-bar'));
     ReactDOM.render(<Accounts />, document.getElementById('login'));
     ReactDOM.render(<Minicart />, document.getElementById('cart'));

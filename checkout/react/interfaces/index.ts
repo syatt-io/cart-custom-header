@@ -1,4 +1,4 @@
-export interface Departaments {
+export interface Departments {
     items: {
       name: string
       slug: string

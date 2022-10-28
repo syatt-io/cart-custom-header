@@ -24,14 +24,14 @@ const UseMenuMobile = ({
 }: MenuMobileProps) => {
     const [active, setActive] = useState('')
     const [height, setHeight] = useState('0px')
-    const [opacity, setOpacity] = useState('active-departament')
+    const [opacity, setOpacity] = useState('active-department')
     const content = useRef<any>()
     const sensitive = useRef<any>()
 
     const toggleAccordion = () => {
         setActive(active === '' ? 'active' : '')
         setHeight(active === 'active' ? '0px' : `100vh`)
-        setOpacity(active === 'active' ? 'active-departament' : 'rotate')
+        setOpacity(active === 'active' ? 'active-department' : 'rotate')
     }
 
     useEffect(() => {}, [active, height, opacity])

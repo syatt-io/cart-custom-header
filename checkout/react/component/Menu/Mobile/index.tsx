@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { Departaments } from '../../../interfaces'
+import { Departments } from '../../../interfaces'
 import UseMenuMobile from '../../../hooks/useMenuMobile'
 import useWindowDimensions from '../../../hooks/useWindowDimensions'
 import SearchBar from '../../SearchBar'
 import './styles.scss'
 
-const Mobile = ({ items }: Departaments) => {
+const Mobile = ({ items }: Departments) => {
   const { width } = useWindowDimensions()
   const [isMobile, setIsMobile] = useState<boolean>()
   const [menu, setMenu] = useState(false)
@@ -71,19 +71,19 @@ const Mobile = ({ items }: Departaments) => {
             classNameGroup=""
             classNameItem=""
           >
-            {item?.menu?.map((departament, index: number) => {
+            {item?.menu?.map((department, index: number) => {
               return (
                 <UseMenuMobile
                   key={index}
-                  url={departament.slug}
-                  hasSubMenu={departament?.menu?.length === 0 ? false : true}
-                  showArrow={departament?.menu?.length === 0 ? false : true}
+                  url={department.slug}
+                  hasSubMenu={department?.menu?.length === 0 ? false : true}
+                  showArrow={department?.menu?.length === 0 ? false : true}
                   classNameGroup=""
                   classNameItem=""
-                  title={departament.name}
+                  title={department.name}
                 >
-                  {departament &&
-                    departament?.menu?.map((category, index: number) => (
+                  {department &&
+                    department?.menu?.map((category, index: number) => (
                       <UseMenuMobile
                         key={index}
                         url={category.slug}

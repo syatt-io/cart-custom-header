@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Categories, Departaments } from '../../../interfaces'
+import { Categories, Departments } from '../../../interfaces'
 import './styles.scss'
 
 
-const Desktop = ({ items }: Departaments) => {
-  const [overDepartament, setOverDepartament] = useState<[]>([])
+const Desktop = ({ items }: Departments) => {
+  const [overDepartment, setOverDepartment] = useState<[]>([])
   const [overCategory, setOverCategory] = useState({ category: [], brands: [] })
   const [allCategories, setAllCategories] = useState('')
   const [allCategories2, setAllCategories2] = useState('')
@@ -37,34 +37,34 @@ const Desktop = ({ items }: Departaments) => {
   }
 
   const handlesOnmouseout = () => {
-    setOverDepartament([])
+    setOverDepartment([])
     setOverCategory({ category: [], brands: [] })
     setOverSubCategory({ category: [], name: '' })
   }
 
-  const handlerItem = (departament) => {
-    setOverDepartament(departament)
+  const handlerItem = (department) => {
+    setOverDepartment(department)
     setOverCategory((prev: any) => {
       return {
         ...prev,
-        category: departament[0]?.menu,
-        brands: departament[0]?.brands,
+        category: department[0]?.menu,
+        brands: department[0]?.brands,
       }
     })
   }
 
-  useEffect(() => {}, [allCategories, allCategories2, overDepartament, overCategory, overSubCategory])
+  useEffect(() => {}, [allCategories, allCategories2, overDepartment, overCategory, overSubCategory])
 
   return (
     <>
       <div className="departments-sections">
-        <ul className="departament_group">
+        <ul className="departments_group">
           {items?.map((item) => (
             <li
               onMouseOver={() => handlerItem(item?.menu)}
-              className={`departament_group__item ${overDepartament === item?.menu ? 'departament_group__item--active' : ''}`}
+              className={`departments_group__item ${overDepartment === item?.menu ? 'departments_group__item--active' : ''}`}
             >
-              <a className="departament_group__item__link" href={item.slug}>
+              <a className="departments_group__item__link" href={item.slug}>
                 {item.name}
               </a>
             </li>
@@ -75,34 +75,34 @@ const Desktop = ({ items }: Departaments) => {
           <div className="header__contact-email">support@cosmo.ca</div>
         </div>
       </div>
-      {overDepartament?.length > 0 ? (
+      {overDepartment?.length > 0 ? (
         <div className="megamenu" onMouseLeave={handlesOnmouseout}>
-          {overDepartament?.length > 0 ? (
+          {overDepartment?.length > 0 ? (
             <div className="categories_container">
               <div className="categories_container__categories">
                 <ul
                   className={`categories_container__categories__group ${overCategory?.category?.length > 0 ? 'border-left' : null
                     }`}
                 >
-                  {overDepartament.map((departament: any) => (
+                  {overDepartment.map((department: any) => (
                     <li
-                      className={`categories_group__item ${departament.menu === overCategory.category
+                      className={`categories_group__item ${department.menu === overCategory.category
                           ? 'active'
                           : ''
                         }`}
                       onMouseOver={() =>
                         handlerOverCategory(
-                          departament.menu,
-                          departament.brands,
-                          departament.all_categories
+                          department.menu,
+                          department.brands,
+                          department.all_categories
                         )
                       }
                     >
                       <a
                         className="categories_group__item__link"
-                        href={departament.slug}
+                        href={department.slug}
                       >
-                        {departament.name}
+                        {department.name}
                       </a>
                     </li>
                   ))}
