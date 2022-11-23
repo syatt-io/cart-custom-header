@@ -1,12 +1,11 @@
 
 
 const AddLoginPrompt = () => {
+  const heading = document.querySelector<HTMLElement | any>('.heading')
     if (window.location.hash === '#/profile' ||
         window.location.hash === '#/email' ||
         window.location.hash === '#/shipping' ||
         window.location.hash === '#/payment') {
-
-        const heading = document.querySelector<HTMLElement | any>('.heading')
         heading.style.display = 'none'
 
         const checkoutContainer = document.querySelector<HTMLElement | any>('.client-profile-data')
@@ -56,6 +55,9 @@ const AddLoginPrompt = () => {
             progressDiv.innerHTML = progressBar
             checkoutContainer.insertBefore(progressDiv, checkoutContainer.children[0])
         }
+    }
+    else {
+      heading.style.display = 'block'
     }
 }
 

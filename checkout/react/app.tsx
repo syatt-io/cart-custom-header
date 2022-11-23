@@ -6,45 +6,39 @@ import AddLoginPrompt from './component/AddLoginPrompt';
 import CouponField from './component/CouponField';
 import CreateTaxRow from './component/CreateTaxRow';
 import Accordion from './component/Accordion';
-import Menu from './component/Menu';
-import Minicart from './component/Minicart';
 import OrderSummaryTitle from './component/OrderSummaryTitle';
-import SearchBar from './component/SearchBar';
 import Steps from './component/Steps';
 import TitleCheckout from './component/TitleCheckout';
 import UnitPriceHeading from './component/UnitPriceHeading';
 import './styles.scss'
 let oldHref = document.location.href;
 
-const App = () => {
-    ReactDOM.render(<Menu />, document.getElementById('departments'));
-    ReactDOM.render(<SearchBar />, document.getElementById('search-bar'));
-    ReactDOM.render(<Accounts />, document.getElementById('login'));
-    ReactDOM.render(<Minicart />, document.getElementById('cart'));
-}
+const App = () => {console.log('linked Checkout from App')}
 
 window.addEventListener('DOMContentLoaded', () => {
-    App()
-    TitleCheckout()
-    UnitPriceHeading()
-    OrderSummaryTitle()
-    CouponField()
-    CreateTaxRow()
-    Accordion()
-    AddLoginPrompt()
-    Steps()
+  App()
+  TitleCheckout()
+  UnitPriceHeading()
+  OrderSummaryTitle()
+  CreateTaxRow()
+  CouponField()
+  Accordion()
+  AddLoginPrompt()
+  Steps()
 })
+
 
 let bodyList = document.querySelector<HTMLElement | any>("body")
     let observer = new MutationObserver(function (mutations) {
       mutations.forEach(function (mutation) {
         if (oldHref != document.location.href) {
           oldHref = document.location.href;
+          App()
           TitleCheckout()
           UnitPriceHeading()
           OrderSummaryTitle()
-          CouponField()
           CreateTaxRow()
+          CouponField()
           Accordion()
           AddLoginPrompt()
           Steps()

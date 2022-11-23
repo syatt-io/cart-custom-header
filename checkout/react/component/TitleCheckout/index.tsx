@@ -4,8 +4,8 @@ const TitleCheckout = () => {
     const heading = document.createElement('h1')
     heading.classList.add('heading');
     heading.textContent = 'Your Cart'
-    const headingHtml = document.getElementsByClassName('checkout-container')[0]
-    headingHtml.prepend(heading)
+    const headingHtml = document.querySelector('.checkout-container')
+    headingHtml?.prepend(heading)
   }
 }
 
