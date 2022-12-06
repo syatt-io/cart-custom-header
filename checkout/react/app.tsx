@@ -1,7 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import 'vtex-tachyons'
-import Accounts from './component/Accounts';
 import AddLoginPrompt from './component/AddLoginPrompt';
 import CouponField from './component/CouponField';
 import CreateTaxRow from './component/CreateTaxRow';
