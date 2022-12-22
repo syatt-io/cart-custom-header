@@ -1,5 +1,4 @@
 
-
 const AddLoginPrompt = () => {
   const heading = document.querySelector<HTMLElement | any>('.heading')
     if (window.location.hash === '#/profile' ||

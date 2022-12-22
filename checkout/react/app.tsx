@@ -1,11 +1,11 @@
-import AddLoginPrompt from './component/AddLoginPrompt';
-import CouponField from './component/CouponField';
-import CreateTaxRow from './component/CreateTaxRow';
+import AddLoginPrompt from './components/AddLoginPrompt';
+import CouponField from './components/CouponField';
+import CreateTaxRow from './components/CreateTaxRow';
 import Accordion from './component/Accordion';
-import OrderSummaryTitle from './component/OrderSummaryTitle';
-import Steps from './component/Steps';
-import TitleCheckout from './component/TitleCheckout';
-import UnitPriceHeading from './component/UnitPriceHeading';
+import OrderSummaryTitle from './components/OrderSummaryTitle';
+import Steps from './components/Steps';
+import TitleCheckout from './components/TitleCheckout';
+import UnitPriceHeading from './components/UnitPriceHeading';
 import './styles.scss'
 let oldHref = document.location.href;
 
