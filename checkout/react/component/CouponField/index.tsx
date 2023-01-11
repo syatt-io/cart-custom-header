@@ -1,5 +1,7 @@
 const CouponField = () => {
   if (!document.querySelector('.discount-row')) {
+    $("#cart-coupon").attr("placeholder", "Type your answer here");
+
     const discountRow = document.createElement('tr')
     const couponFieldTd = document.createElement('td')
     const discountTd = document.createElement('td')
@@ -14,7 +16,6 @@ const CouponField = () => {
     discountRow.appendChild(discountTd)
     discountRow.appendChild(couponFieldTd)
     document.querySelector('.totalizers-list')?.appendChild(discountRow)
-    console.log('por aquí')
   }
 }
 

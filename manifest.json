@@ -11,6 +11,9 @@
   "scripts": {
     "prereleasy": "bash lint.sh"
   },
+  "dependencies": {
+    "vtex.order-manager": "0.x"
+  },
   "credentialType": "absolute",
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

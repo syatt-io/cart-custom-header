@@ -1,30 +1,28 @@
 {
-  "extends": "vtex",
-  "root": true,
-  "env": {
-    "node": true,
-    "es6": true,
-    "jest": true
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
   },
-  "globals": {
-    "metrics": true
-  },
+  "plugins": ["@typescript-eslint", "react-hooks", "vtex"],
+  "extends": [
+    "./tsconfig.json",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "vtex",
+    "vtex-react",
+    "prettier"
+  ],
   "rules": {
-    "no-console": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/camelcase": ["warn", { "properties": "never" }],
-    "require-atomic-updates": "off"
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off"
   },
-  "overrides": [
-    {
-      "files": ["node/build/react/**/*"],
-      "globals": {
-        "window": true,
-        "__RUNTIME__": true
-      }
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
     }
-  ]
+  }
 }

@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@apollo/client": "^3.7.1",
+        "@vtex/order-manager": "^0.5.4-beta.0",
         "@vtex/styleguide": "^9.97.5",
         "graphql": "^16.6.0",
         "graphql-tag": "^2.12.6",
